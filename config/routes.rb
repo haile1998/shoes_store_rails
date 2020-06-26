@@ -13,6 +13,18 @@ Rails.application.routes.draw do
   namespace :home do
     resources :homepage
   end
-  resources :users
+
+  # get "admin/users" => "users#index"
+  match "admin/users/:id/toggle", :to => "users#toggle", :as => "admin_users_toggle", :via => :put
+  scope :admin do
+    resources :users
+  end
+
+  get "admin/products" => "products#index"
+  resources :products
+
+  resources :carts
+
+  resources :line_items
   root "home/homepage#index"
 end

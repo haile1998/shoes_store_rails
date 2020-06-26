@@ -1,7 +1,7 @@
-<div class="container">
+
   <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-interval="10000">
+      <div class="carousel-item active" data-interval="1000">
         <img src="https://thumbs.dreamstime.com/z/modern-banner-template-shoes-shop-vector-illustration-147601076.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-interval="2000">
@@ -20,4 +20,20 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <% @product.each do |p| %>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../<%= p.image_url %>" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"><%= link_to p.name, p %></h5>
+              <p class="card-text">$<%= p.price %></p>
+              <%= link_to "Add to cart", line_items_path(p) %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>

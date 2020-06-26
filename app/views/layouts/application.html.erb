@@ -12,47 +12,59 @@
 
   <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Shoes</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container">
+      <h3><%= link_to "Shoes", :root, class: "navbar-brand" %></h3>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <%# if @current_user.role == "Admin" %>
-<!--          <li class="nav-item active">-->
-            <%#= link_to "Products", "admin#index", class: "nav-link" %>
-<!--          </li>-->
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link" href="#">Cart</a>-->
-<!--          </li>-->
-        <%# end %>
-        <%# if @current_user.role == "User" %>
-<!--          <li class="nav-item active">-->
-            <%#= link_to "Products", :root, class: "nav-link" %>
-<!--          </li>-->
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link" href="#">Cart</a>-->
-<!--          </li>-->
-        <%# end %>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <% if !logged_in? %>
-          <%= link_to "Login", login_path, method: :get, class: "btn btn-outline-success" %>
-        <% end %>
-        <% if logged_in? %>
-          <%= link_to "Logout", "/logout", method: :delete, class: "btn btn-outline-danger" %>
-        <% end %>
-      </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <% if @current_user.present? == true %>
+            <% if @current_user.role == "Admin" %>
+                      <li class="nav-item active">
+                        <%= link_to "Products", admin_products_path, class: "nav-link" %>
+                      </li>
+                      <li class="nav-item">
+                        <%= link_to "Users", users_path, class: "nav-link" %>
+                      </li>
+            <% end %>
+            <% if @current_user.role == "User" %>
+                      <li class="nav-item active">
+            <%= link_to "Products", :root, class: "nav-link" %>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                      </li>
+            <% end %>
+          <% else %>
+            <li class="nav-item active">
+              <%= link_to "Products", :root, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+          <% end %>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <% if !logged_in? %>
+            <%= link_to "Login", login_path, method: :get, class: "btn btn-outline-success" %>
+          <% end %>
+          <% if logged_in? %>
+            <%= link_to "Hello, #{@current_user.name}", user_path(@current_user), class: "btn" %>
+            <%= link_to "Logout", "/logout", method: :delete, class: "btn btn-outline-danger" %>
+          <% end %>
+        </form>
+      </div>
     </div>
   </nav>
-    <div class="row">
-      <% flash.each do |k, v| %>
-      <div class="alert alert-<%= k %>>" role="alert">
-        <%= v %>
-      </div>
-        <% end %>
-    </div>
+<!--    <div class="row">-->
+      <%# flash.each do |k, v| %>
+<!--      <div class="alert alert-<%#= k %>>" role="alert">-->
+        <%#= v %>
+<!--      </div>-->
+        <%# end %>
+<!--    </div>-->
     <div class="container">
       <%= yield %>
     </div>

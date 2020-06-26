@@ -1,0 +1,28 @@
+<div class="container mt-5">
+  <%= link_to "Create new product", new_product_path, class: "btn btn-success" %>
+  <table class="table mt-5">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col" colspan="2">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @product.each do |p| %>
+      <tr>
+        <th scope="row"><%= p.id %></th>
+        <td><img src="../<%= p.image_url %>" alt="image" width="50px" height="50px"></td>
+        <td><%= p.name %></td>
+        <td><%= p.description %></td>
+        <td><%= p.price %></td>
+        <td><%= link_to "Edit", edit_product_path(p), class: "btn btn-warning" %></td>
+        <td><%= link_to "Delete", p, method: :delete, class: "btn btn-danger" %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

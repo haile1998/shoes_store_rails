@@ -7,19 +7,25 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by name: params[:session][:name]
     if user && user.password == params[:session][:password]
-      log_in(user)
-      if user.role == "Admin"
-        redirect_to("/admin")
+      if user.status
+        log_in(user)
+        if user.role == "Admin"
+          redirect_to("/admin")
+        else
+          redirect_to :root
+        end
       else
-        redirect_to(:root)
+        flash["danger"] = "Your account have been banned!"
+        render :new
       end
     else
-      render(:new)
+      flash["danger"] = "Wrong username or password!"
+      render :new
     end
   end
 
   def destroy
     log_out
-    redirect_to(:root)
+    redirect_to :root
   end
 end

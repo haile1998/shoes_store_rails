@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <h1><%= yield :page_title %></h1>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <%= form_for @product do |p| %>
+        <div class="form-group">
+          <label for="name">Product name:</label>
+          <%= p.text_field :name, class: "form-control", id: "name" %>
+        </div>
+        <div class="form-group">
+          <label for="description">Product description:</label>
+          <%= p.text_area :description, class: "form-control", id: "description" %>
+        </div>
+        <div class="form-group">
+          <label for="image">Image:</label>
+          <div class="input-group mb-3">
+            <div class="custom-file">
+              <%= p.file_field(:image_url, class: "custom-file-input", accept: "image/*") %>
+              <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <%= p.number_field :price, class: "form-control", id: "price" %>
+        </div>
+        <%= p.submit class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

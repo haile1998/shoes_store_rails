@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6">
+      <img src="../<%= @product.image_url %>" alt="" class="img-fluid">
+    </div>
+    <div class="col-4">
+      <div class="container">
+        <h3><%= @product.name %></h3>
+        <hr>
+        <h4><%= number_to_currency(@product.price, locale: :vi) %></h4>
+        <p><%= @product.description %></p>
+        <button class="btn btn-outline-info">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table mt-5">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Role</th>
+      <th scope="col" colspan="2">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @user.each do |u| %>
+      <tr>
+        <th scope="row"><%= u.id %></th>
+        <td><%= u.name %></td>
+        <td><%= u.role %></td>
+        <td><%= link_to u.status ? "Lock" : "Unlock", admin_users_toggle_path(u), class: "btn btn-warning", method: :put %></td>
+        <td><%= link_to "Delete", u, method: :delete, class: "btn btn-danger" %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

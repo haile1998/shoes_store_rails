@@ -1,0 +1,8 @@
+vi:
+  number:
+    format:
+      unit: 'đ'
+      delimiter: ','
+      separator: '.'
+      precision: 3
+      format: '%u%n'
