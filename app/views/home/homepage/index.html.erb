@@ -30,7 +30,7 @@
             <div class="card-body">
               <h5 class="card-title"><%= link_to p.name, p %></h5>
               <p class="card-text">$<%= p.price %></p>
-              <%= link_to "Add to cart", line_items_path(p) %>
+              <%= link_to "Add to cart", line_items_path(:product_id => p) %>
             </div>
           </div>
         </div>

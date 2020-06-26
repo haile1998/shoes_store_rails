@@ -20,30 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7b8a445-8b89-4f7c-aede-4b1543cf88b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/products/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/home/homepage_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/home/homepage_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/homepage/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/homepage/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/line_items_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/line_items_controller.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593073773937</updated>
       <workItem from="1593073775145" duration="9944000" />
-      <workItem from="1593135184802" duration="25426000" />
+      <workItem from="1593135184802" duration="26217000" />
     </task>
     <servers />
   </component>
@@ -219,38 +197,38 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1593135747575" />
-    <state width="1807" height="243" key="GridCell.Tab.0.bottom" timestamp="1593165883285">
+    <state width="1807" height="243" key="GridCell.Tab.0.bottom" timestamp="1593167084248">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="243" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1593165883285" />
-    <state width="1807" height="243" key="GridCell.Tab.0.center" timestamp="1593165883285">
+    <state width="1807" height="243" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1593167084248" />
+    <state width="1807" height="243" key="GridCell.Tab.0.center" timestamp="1593167084247">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="243" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1593165883285" />
-    <state width="1807" height="243" key="GridCell.Tab.0.left" timestamp="1593165883285">
+    <state width="1807" height="243" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1593167084247" />
+    <state width="1807" height="243" key="GridCell.Tab.0.left" timestamp="1593167084246">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="243" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1593165883285" />
-    <state width="1807" height="243" key="GridCell.Tab.0.right" timestamp="1593165883285">
+    <state width="1807" height="243" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1593167084246" />
+    <state width="1807" height="243" key="GridCell.Tab.0.right" timestamp="1593167084247">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="243" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1593165883285" />
-    <state width="1807" height="243" key="GridCell.Tab.1.bottom" timestamp="1593165883286">
+    <state width="1807" height="243" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1593167084247" />
+    <state width="1807" height="243" key="GridCell.Tab.1.bottom" timestamp="1593167084250">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="243" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1593165883286" />
-    <state width="1807" height="243" key="GridCell.Tab.1.center" timestamp="1593165883286">
+    <state width="1807" height="243" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1593167084250" />
+    <state width="1807" height="243" key="GridCell.Tab.1.center" timestamp="1593167084249">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="243" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1593165883286" />
-    <state width="1807" height="243" key="GridCell.Tab.1.left" timestamp="1593165883286">
+    <state width="1807" height="243" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1593167084249" />
+    <state width="1807" height="243" key="GridCell.Tab.1.left" timestamp="1593167084248">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="243" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1593165883286" />
-    <state width="1807" height="243" key="GridCell.Tab.1.right" timestamp="1593165883286">
+    <state width="1807" height="243" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1593167084248" />
+    <state width="1807" height="243" key="GridCell.Tab.1.right" timestamp="1593167084249">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="243" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1593165883286" />
+    <state width="1807" height="243" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1593167084249" />
     <state width="1807" height="344" key="GridCell.Tab.2.bottom" timestamp="1593161417830">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
