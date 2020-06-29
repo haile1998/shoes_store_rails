@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <div class="row">
+    <% @product.each do |p| %>
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top" src="<%= p.image_url %>" alt="Card image cap" class="img-fluid">
+        <div class="card-body">
+          <h5 class="card-title"><%= p.title %></h5>
+          <p class="card-text"><%= p.price %></p>
+          <%= button_to 'Add to Cart', line_items_path(:product_id => p), class: "btn btn-primary" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
